@@ -116,12 +116,12 @@ namespace JkShop.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var categories = _db.Categories.Find(id);
-            if (categories == null)
+            var tag = _db.Tags.Find(id);
+            if (tag == null)
             {
                 return NotFound();
             }
-            return View(categories);
+            return View(tag);
         }
 
         //POST Delete Action Method
@@ -140,22 +140,21 @@ namespace JkShop.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var Tag = _db.Tags.Find(id);
-            if (tag == null)
+            var Name = _db.Tags.Find(id);
+            if (Name == null)
             {
                 return NotFound();
             }
             if (ModelState.IsValid)
             {
-                _db.Remove(tag);
+                _db.Remove(Name);
                 await _db.SaveChangesAsync();
-                TempData["delete"] = "Category has been deleted";
+                TempData["delete"] = "Tag has been deleted";
                 return RedirectToAction(nameof(Index));
             }
 
             return View(tag);
         }
-
 
 
     }

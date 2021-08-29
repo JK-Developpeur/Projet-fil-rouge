@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V4HvRz2Dl129HXgSEZGfEt4YNci1KPQFUeSwcDuUjXBTPPRts73LfmCNQTK0LXzKL1uH2mfPDrp99ONuNmITEA==",
+  "dgSpecHash": "tBWL8H91FUQzKfOElAdw1UzpieZQWU6WdOQC3VR5Qi1jeBLYGG0TNXhq3Zc+d02nZxHAcD+hkZ28ul1nkopvtg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jihad\\Desktop\\JkShop\\JkShop\\JkShop.csproj",
+  "projectFilePath": "C:\\Users\\Jihad\\Documents\\Git\\Projet-fil-rouge\\JkShop\\JkShop\\JkShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jihad\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Jihad\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.6\\microsoft.aspnetcore.cryptography.internal.5.0.6.nupkg.sha512",
