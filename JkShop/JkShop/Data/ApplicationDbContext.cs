@@ -15,5 +15,7 @@ namespace JkShop.Data
         }
 
         public DbSet<Categories> Categories  { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+
     }
 }

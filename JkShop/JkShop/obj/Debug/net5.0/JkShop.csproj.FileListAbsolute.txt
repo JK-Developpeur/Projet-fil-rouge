@@ -168,3 +168,8 @@ C:\Users\Jihad\Desktop\JkShop\JkShop\obj\Debug\net5.0\Razor\Pages\Shared\_Button
 C:\Users\Jihad\Desktop\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Categories\Edit.cshtml.g.cs
 C:\Users\Jihad\Desktop\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Categories\Details.cshtml.g.cs
 C:\Users\Jihad\Desktop\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Categories\Delete.cshtml.g.cs
+C:\Users\Jihad\Desktop\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Tag\Create.cshtml.g.cs
+C:\Users\Jihad\Desktop\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Tag\Edit.cshtml.g.cs
+C:\Users\Jihad\Desktop\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Tag\Details.cshtml.g.cs
+C:\Users\Jihad\Desktop\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Tag\Delete.cshtml.g.cs
+C:\Users\Jihad\Desktop\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Tag\Index.cshtml.g.cs

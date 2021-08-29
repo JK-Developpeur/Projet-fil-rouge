@@ -1,15 +1,15 @@
 ﻿@using JkShop.Models;
-@model IEnumerable<Categories>
+@model IEnumerable<Tag>
 @{ ViewData["Title"] = "Index"; }
 
 <br />
 <br />
 <div class="row">
     <div class="col-6">
-        <h2 class="text-info">Categories List</h2>
+        <h2 class="text-info">Tag List</h2>
     </div>
     <div class="col-6 text-right">
-        <a asp-action="Create" class="btn btn-info"><i class="fas fa-plus"></i>&nbsp; New Categories</a>
+        <a asp-action="Create" class="btn btn-info"><i class="fas fa-plus"></i>&nbsp; New Tag</a>
     </div>
 </div>
 <br />
@@ -17,7 +17,7 @@
     <table class="table table-striped border">
         <tr class="table-info">
             <th>
-                @Html.DisplayNameFor(c => c.Category)
+                @Html.DisplayNameFor(c => c.Name)
             </th>
             <th></th>
             <th></th>
@@ -25,17 +25,17 @@
         @foreach (var item in Model)
         {
 <tr>
-    <td>@item.Category</td>
+    <td>@item.Name</td>
     <td>
         <partial name="_ButtonPartial" model="@item.Id" />
     </td>
-</tr>
-}
+</tr>}
     </table>
 </div>
 
 @section scripts{
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>    <script type="text/javascript">
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script type="text/javascript">
         $(function(){
             var save = '@TempData["save"]'
             if(save!='') {

@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 namespace JkShop.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class CategoriesController : Controller
+    public class TagController : Controller
     {
         private ApplicationDbContext _db;
 
-        public CategoriesController(ApplicationDbContext db)
+        public TagController(ApplicationDbContext db)
         {
             _db = db;
         }
         public IActionResult Index()
         {
-            return View(_db.Categories.ToList());
+            return View(_db.Tags.ToList());
         }
 
         //GET Create Action Method
@@ -33,17 +33,17 @@ namespace JkShop.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Categories categories)
+        public async Task<IActionResult> Create(Tag tag)
         {
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(categories);
+                _db.Tags.Add(tag);
                 await _db.SaveChangesAsync();
-                TempData["save"] = "Category has been saved";
+                TempData["save"] = "Tag has been saved";
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(categories);
+            return View(tag);
         }
 
         //GET Edit Action Method
@@ -55,29 +55,29 @@ namespace JkShop.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var categories = _db.Categories.Find(id);
-            if (categories == null)
+            var tag = _db.Tags.Find(id);
+            if (tag == null)
             {
                 return NotFound();
             }
-            return View(categories);
+            return View(tag);
         }
 
         //POST Edit Action Method
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Categories categories)
+        public async Task<IActionResult> Edit(Tag tag)
         {
             if (ModelState.IsValid)
             {
-                _db.Update(categories);
+                _db.Update(tag);
                 await _db.SaveChangesAsync();
-                TempData["edit"] = "Categories has been updated";
+                TempData["edit"] = "Tag has been updated";
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(categories);
+            return View(tag);
         }
 
         //GET Details Action Method
@@ -89,19 +89,19 @@ namespace JkShop.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var categories = _db.Categories.Find(id);
-            if (categories == null)
+            var tag = _db.Tags.Find(id);
+            if (tag == null)
             {
                 return NotFound();
             }
-            return View(categories);
+            return View(tag);
         }
 
         //POST Details Action Method
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Details(Categories categories)
+        public IActionResult Details(Tag tag)
         {
             return RedirectToAction(nameof(Index));
 
@@ -128,36 +128,35 @@ namespace JkShop.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int? id, Categories categories)
+        public async Task<IActionResult> Delete(int? id, Tag tag)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            if (id != categories.Id)
+            if (id != tag.Id)
             {
                 return NotFound();
             }
 
-            var category = _db.Categories.Find(id);
-            if (category == null)
+            var Tag = _db.Tags.Find(id);
+            if (tag == null)
             {
                 return NotFound();
             }
             if (ModelState.IsValid)
             {
-                _db.Remove(category);
+                _db.Remove(tag);
                 await _db.SaveChangesAsync();
                 TempData["delete"] = "Category has been deleted";
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(categories);
+            return View(tag);
         }
 
 
 
     }
 }
-    
