@@ -349,3 +349,4 @@ C:\Users\Jihad\Documents\Git\Projet-fil-rouge\JkShop\JkShop\obj\Debug\net5.0\ref
 C:\Users\Jihad\Documents\Git\Projet-fil-rouge\JkShop\JkShop\obj\Debug\net5.0\JkShop.pdb
 C:\Users\Jihad\Documents\Git\Projet-fil-rouge\JkShop\JkShop\obj\Debug\net5.0\JkShop.genruntimeconfig.cache
 C:\Users\Jihad\Documents\Git\Projet-fil-rouge\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Index.cshtml.g.cs
+C:\Users\Jihad\Documents\Git\Projet-fil-rouge\JkShop\JkShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Products\Create.cshtml.g.cs
